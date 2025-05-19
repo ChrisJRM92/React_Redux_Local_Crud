@@ -11,3 +11,6 @@ Currently, two official plugins are available:
 
 - React Hook Form
 - Redux
+
+# Launch app
+- npm run dev
