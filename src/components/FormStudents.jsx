@@ -17,9 +17,9 @@ const Form = () => {
     return (
         <div>
             <form action="" onSubmit={handleSubmit(submit)}>
-                <input type="text" {...register("firstName")} placeholder="Nombre" />
-                <input type="text" {...register("lastName")} placeholder="Apellido" />
-                <input type="text" {...register("age")} placeholder="Edad"/>
+                <input type="text" {...register("firstName")} placeholder="Name" />
+                <input type="text" {...register("lastName")} placeholder="Last Name" />
+                <input type="text" {...register("age")} placeholder="Age"/>
                 <button>Submit</button>
             </form>
         </div>

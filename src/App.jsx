@@ -9,11 +9,13 @@ function App() {
 
   return (
     <>
-      <h1>Práctica Redux</h1>
-      <Form/>
-      {
-        students?.map(student => (<CardStudents key={student.id} student={student}/>))
-      }
+      <h1>Redux students CRUD</h1>
+      <Form />
+      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
+        {
+          students[0] ? students?.map(student => (<CardStudents key={student.id} student={student} />)) : <h2>No data found</h2>
+        }
+      </div>
 
     </>
   )
