@@ -3,7 +3,7 @@ import { deleteStudents } from "../store/slices/students.slice"
 import { setStudentSelected } from "../store/slices/studentSelected.slice"
 
 const CardStudents = ({student}) => {
-
+    console.log(student)
     const dispatch = useDispatch()
 
     const handleDelete = () => {
